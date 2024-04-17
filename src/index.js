@@ -4,20 +4,7 @@ window.createResult = (json) => {
   const o = JSON.parse(json);
   const obj = o.data;
 
-  const {
-    startYear,
-    startMonth,
-    startDay,
-    startHr,
-    startMin,
-    startSec,
-    endYear,
-    endMonth,
-    endDay,
-    interval,
-    start,
-    end,
-  } = obj;
+  const { interval, start, end } = obj;
   console.log(obj);
   const newStartDate = new Date(start);
   const newEndDate = new Date(end);
